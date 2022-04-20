@@ -1,0 +1,83 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  font-weight: 500;
+}
+
+.links {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1rem;
+}
+
+.activeClass {
+  color: rgb(79, 151, 19);
+  font-size: 25px;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  gap: 10px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  justify-content: space-around;
+}
+
+.detail-row {
+  display: flex;
+  flex-direction: row;
+  margin: 16px;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+
+.item_card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 40%;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 7px 6px 12px -1px rgba(72, 72, 72, 0.77);
+  -webkit-box-shadow: 7px 6px 12px -1px rgba(72, 72, 72, 0.77);
+  -moz-box-shadow: 7px 6px 12px -1px rgba(72, 72, 72, 0.77);
+}
+
+.small-img {
+  height: 90px;
+}
+
+.A-category {
+  background: rgb(100, 149, 237);
+}
+
+.B-category {
+  background: rgb(77, 180, 77);
+}
+
+.C-category {
+  background: rgb(226, 102, 64);
+}
