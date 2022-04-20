@@ -1,32 +1,44 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-
+import Logo from "../assets/logo"
 //uso de categorias en un array para que puedan ser dinamicas en un futuro. irian en la NavBar ej: traerlas de una base de datos
 
-/* recuerden importar Link o NavLink y no usar etiquetas a */
+/*
+*/
 
 export const NavBar = () => {
   const categories = [
-    { id: 'asfadd', address: '/', text: 'TODOS LOS PRODUCTOS' },
-    { id: '123asf', address: '/category/kimono', text: 'kimono' },
-    { id: 'sgs3q3', address: '/category/bata', text: 'bata' },
-    { id: 'gkl98s', address: '/category/panuelo', text: 'pañuelo' },
+    { id: '1000', address: '/', text: 'Productos' },
+    { id: '1001', address: '/category/kimono', text: 'kimono' },
+    { id: '1002', address: '/category/bata', text: 'bata' },
+    { id: '1003', address: '/category/panuelo', text: 'pañuelo' },
+    { id: '1004', address: '/', text: 'Tabla de medidas' },
+    { id: '1005', address: '/', text: 'nosotras' },
+    { id: '1006', address: '/', text: 'contactanos' }
   ];
 
   return (
-    <section style={{ background: 'lightgray' }}>
-      {categories.map((cat) => {
-        return (
-          <div className="links" key={cat.id}>
-            <NavLink
-              to={cat.address}
-              className={({ isActive }) => (isActive ? 'activeClass' : '')}
-            >
-              {cat.text}
-            </NavLink>
+    <div className="logo-navbar">
+      <Link to={`/`}>
+          <div className="container-logo">
+              <img src={Logo} alt="Logo" className="logo"/>
           </div>
-        );
-      })}
-    </section>
+      </Link>
+      <section style={{ background: 'lightgray' }}>
+        {categories.map((cat) => {
+          return (
+            <div className="links" key={cat.id}>
+              <NavLink
+                to={cat.address}
+                className={({ isActive }) => (isActive ? 'activeClass' : '')}
+              >
+                {cat.text}
+              </NavLink>
+
+            </div>
+          );
+        })}
+      </section>
+    </div>
   );
 };

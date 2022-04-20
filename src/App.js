@@ -6,6 +6,9 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
 import { ItemListContainer } from './components/ItemListContainer';
 import { ItemDetailContainer } from './components/ItemDetailContainer';
+import {SizeClothes} from "./pages/SizeClothes"
+import {Contact} from "./pages/Contact"
+import {AboutUs} from "./pages/AboutUs"
 
 export default function App() {
   return (
@@ -18,18 +21,19 @@ export default function App() {
       <Routes>
         {/* la HOME */}
         <Route path="/" element={<ItemListContainer greeting={'HOME'} />} />
-
         {/* filtramos por categoria */}
-        <Route
-          path="/category/:catId"
-          element={<ItemListContainer greeting={'FILTRADO'} />}
-        />
-
+        <Route path="/category/:catId" element={<ItemListContainer greeting={'FILTRADO'}/>}/>
         {/* vista de detalle */}
         <Route path="/product/:itemId" element={<ItemDetailContainer />} />
-
-        {/* para evitar navegar a rutas que no existen. pueden usar un mensaje de error en vez del navigate que reditecciona */}
+        {/*rutas que no existen se redireccionan */}
         <Route path="*" element={<Navigate to="/" />} />
+        {/*Tabla de medidas */}
+        <Route path="/Size" element={<SizeClothes/>} />
+        {/*Contacto */}
+        <Route path="/Contact" element={<Contact/>} />
+         {/*Contacto */}
+        <Route path="/AboutUs" element={<AboutUs/>} />
+
       </Routes>
     </BrowserRouter>
   );

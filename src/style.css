@@ -6,6 +6,17 @@ body {
   margin: 0;
 }
 
+.logo-navbar{ 
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+
+}
+.container-logo img{
+  
+    height: 100px;    
+}  
 a {
   font-weight: 500;
 }
@@ -58,7 +69,6 @@ a {
   flex: 0 40%;
   padding: 15px;
   border-radius: 10px;
-  color: white;
   font-weight: 600;
   text-align: center;
   box-shadow: 7px 6px 12px -1px rgba(72, 72, 72, 0.77);
