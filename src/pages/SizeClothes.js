@@ -1,3 +1,5 @@
+import React from 'react';
+
 const SizeClothes = () =>{
 
   return <h1>tabla de tallas</h1>

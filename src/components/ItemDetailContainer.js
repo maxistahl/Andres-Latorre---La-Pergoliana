@@ -3,7 +3,7 @@ import { ItemDetail } from './ItemDetail';
 import { data } from '../assets/data';
 import { useParams } from 'react-router-dom';
 
-export const ItemDetailContainer = () => {
+const ItemDetailContainer = () => {
   const [product, setProduct] = useState({});
   const [loading, setLoading] = useState(true);
 
@@ -30,3 +30,5 @@ export const ItemDetailContainer = () => {
 
   return loading ? <h2>CARGANDO...</h2> : <ItemDetail {...product} />;
 };
+
+export default ItemDetailContainer;

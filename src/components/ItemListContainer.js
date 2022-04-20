@@ -5,7 +5,7 @@ import { data } from '../assets/data';
 /* import de useParams para traer el parametro de la URL */
 import { useParams } from 'react-router-dom';
 
-export const ItemListContainer = ({ greeting }) => {
+const ItemListContainer = ({ greeting }) => {
   const [items, setItems] = useState([]);
 
   /* para ponerle un loader */
@@ -45,3 +45,4 @@ export const ItemListContainer = ({ greeting }) => {
     </>
   );
 };
+export default ItemListContainer;

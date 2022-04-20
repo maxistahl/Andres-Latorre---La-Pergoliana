@@ -3,12 +3,13 @@ import './style.css';
 
 /* IMPORTAMOS DE react-router-dom */
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { NavBar } from './components/NavBar';
-import { ItemListContainer } from './components/ItemListContainer';
-import { ItemDetailContainer } from './components/ItemDetailContainer';
-import {SizeClothes} from "./pages/SizeClothes"
-import {Contact} from "./pages/Contact"
-import {AboutUs} from "./pages/AboutUs"
+
+import NavBar  from './components/NavBar';
+import ItemListContainer  from './components/ItemListContainer';
+import ItemDetailContainer  from './components/ItemDetailContainer';
+import SizeClothes from "./pages/SizeClothes"
+import Contact from "./pages/Contact"
+import AboutUs from "./pages/AboutUs"
 
 export default function App() {
   return (
