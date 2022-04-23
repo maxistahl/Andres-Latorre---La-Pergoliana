@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+
+import Cart from './Cart';
+
 import Logo from "../assets/logo.svg"
 //uso de categorias en un array para que puedan ser dinamicas en un futuro. irian en la NavBar ej: traerlas de una base de datos
 
@@ -39,6 +42,9 @@ const NavBar = () => {
           );
         })}
       </section>
+      <div className='Cart'>
+        <Cart/>
+      </div>
     </div>
   );
 };

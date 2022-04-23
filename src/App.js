@@ -10,6 +10,7 @@ import ItemDetailContainer  from './components/ItemDetailContainer';
 import SizeClothes from "./pages/SizeClothes"
 import Contact from "./pages/Contact"
 import AboutUs from "./pages/AboutUs"
+//import CartProvider from './context/Context';
 
 export default function App() {
   return (
@@ -17,7 +18,7 @@ export default function App() {
     <BrowserRouter>
       {/* La Navbar afuera de Routes para que se muestre en todas las rutas */}
       <NavBar />
-
+      
       {/* aca empiezan las rutas */}
       <Routes>
         {/* la HOME */}
@@ -29,11 +30,11 @@ export default function App() {
         {/*rutas que no existen se redireccionan */}
         <Route path="*" element={<Navigate to="/" />} />
         {/*Tabla de medidas */}
-        <Route path="/Size" element={<SizeClothes/>} />
+        <Route path="/size" element={<SizeClothes/>} />
         {/*Contacto */}
-        <Route path="/Contact" element={<Contact/>} />
+        <Route path="/contact" element={<Contact/>} />
          {/*Contacto */}
-        <Route path="/AboutUs" element={<AboutUs/>} />
+        <Route path="/about-us" element={<AboutUs/>} />
 
       </Routes>
     </BrowserRouter>

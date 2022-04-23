@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const ItemDetail = ({
+const ItemDetail = ({
   id,
   name,
   category,
@@ -19,3 +19,5 @@ export const ItemDetail = ({
     </div>
   );
 };
+
+export default ItemDetail;

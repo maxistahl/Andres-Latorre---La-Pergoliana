@@ -14,11 +14,18 @@ const ItemCount = () => {
     };
 
   return (
-    <div className="stock">
-      <button className="btn-rem" onClick={remstock} disabled={ count<= 0 ? true : null}><GoDiffRemoved size="3em"/></button>
-      <p>stock: {count}</p>
-      <button className="btn-add" onClick={addstock} disabled={ count>=stock ? true : null}><GoDiffAdded size="3em"/></button>
-    </div>
+    <>
+      <div className="stock">
+        <button className="btn-rem" onClick={remstock} disabled={ count<= 0 ? true : null}><GoDiffRemoved size="3em"/></button>
+        <p>stock: {count}</p>
+        <button className="btn-add" onClick={addstock} disabled={ count>=stock ? true : null}><GoDiffAdded size="3em"/></button>
+      </div>
+      {/* 
+      <div>
+        </div><button className="btn-buy" onClick={funcion que va al context}></button>
+      </div>
+      */}
+    </>
   );
 }
 

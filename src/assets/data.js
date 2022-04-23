@@ -1,4 +1,4 @@
-export const data = [
+const data = [
   /* id es un STRING
     necesitan categoria, en este caso se llama category
     el precio es un numero
@@ -79,3 +79,5 @@ export const data = [
       description: "pañuelo de seda negro con puntos blancos de confeccion artesanal"
   } 
 ];
+
+export default data;

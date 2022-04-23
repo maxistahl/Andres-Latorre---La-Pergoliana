@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { ItemList } from './ItemList';
-import { data } from '../assets/data';
+import ItemList from './ItemList';
+import data from '../assets/data';
 
 /* import de useParams para traer el parametro de la URL */
 import { useParams } from 'react-router-dom';

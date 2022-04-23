@@ -2,8 +2,7 @@ import React from 'react';
 import ItemCount from "./ItemCount"
 import { Link } from 'react-router-dom';
 
-export const Item = ({ id, name, category, image, price }) => {
-  /* aca tenemos nuestro Link */
+const Item = ({ id, name, category, image, price }) => {
   return (
     <>
       <Link to={`/product/${id}`}>
@@ -19,3 +18,6 @@ export const Item = ({ id, name, category, image, price }) => {
     </>
   );
 };
+
+export default Item;
+
