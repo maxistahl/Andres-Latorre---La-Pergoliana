@@ -2,11 +2,11 @@ import React from 'react';
 import ItemCount from "./ItemCount"
 import { Link } from 'react-router-dom';
 
-const Item = ({ id, name, category, image, price }) => {
+const Item = ({ id, name, category, image, price,stock }) => {
   return (
-    <>
+    <div className= "item">
       <Link to={`/product/${id}`}>
-        <div className={`item_card ${category}-category`}>
+        <div className="item_card">
           <span>{name}</span>
           <span>
             <img src={image} alt={name} className={'small-img'} />
@@ -14,8 +14,8 @@ const Item = ({ id, name, category, image, price }) => {
           <span>${price}</span>
         </div>
       </Link>
-      <ItemCount/>
-    </>
+      <ItemCount id={id} stock={stock} price={price}/>
+    </div>
   );
 };
 

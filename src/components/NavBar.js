@@ -4,10 +4,8 @@ import { Link, NavLink } from 'react-router-dom';
 import Cart from './Cart';
 
 import Logo from "../assets/logo.svg"
-//uso de categorias en un array para que puedan ser dinamicas en un futuro. irian en la NavBar ej: traerlas de una base de datos
 
-/*
-*/
+//carga de navbar de manera dinamica
 
 const NavBar = () => {
   const categories = [

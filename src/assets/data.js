@@ -8,7 +8,7 @@ const data = [
       name:"kimono turquesa con flores",
       image:"https://drive.google.com/uc?export=view&id=1Ii6mC2DgxbsokmptYVISlk2HL-eBKHtD",
       price:2500,
-      stock:5,
+      stock:3,
       color:"turquesa",
       category:"kimono",
       description: "kimono de saten turquesa con flores amarillas y detalles en rojo de confeccion artesanal"
@@ -30,7 +30,7 @@ const data = [
       name:"kimono rojo con flores",
       image:"https://drive.google.com/uc?export=view&id=1cj9cEGKlMgMxY9uhX3s0lP0gY9WgcuHD",
       price:2500,
-      stock:5,
+      stock:6,
       color:"rojo",
       category:"kimono",
       description: "kimono de saten rojo con flores rosas y detalles en turquesa de confeccion artesanal"
@@ -41,7 +41,7 @@ const data = [
       name:"bata negra con detalles",
       image:"https://drive.google.com/uc?export=view&id=1o2A0Lblmp4zN1hRs_E9QKkzKaOPelJlI",
       price:2500,
-      stock:5,
+      stock:2,
       color:"negro",
       category:"bata",
       description: "bata de saten negro con detalles blancos de confeccion artesanal"

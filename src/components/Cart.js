@@ -1,15 +1,15 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 
+
 import {CartContext}  from '../context/StoreProvider';
 
 const Cart = () => {
   // traemos las unidades para mostrarlas al lado de nuestro carrito
   const [{count}] = useContext(CartContext);
-console.log(count && "andres");
+
   return (
-    /* uso de rendering condicional: si hay unidades se muestra el carrito, sino no */
-    
+       
       <Link to="/cart" className="links carrito">
         <svg
           xmlns="http://www.w3.org/2000/svg"

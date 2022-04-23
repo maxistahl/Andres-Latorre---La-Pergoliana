@@ -15,7 +15,7 @@ body {
 }
 .container-logo img{
   
-    height: 100px;    
+  height: 100px;    
 }  
 a {
   font-weight: 500;
@@ -62,11 +62,8 @@ a {
   align-self: flex-start;
   justify-self: flex-start;
 }
-
-.item_card {
-  display: flex;
-  flex-direction: column;
-  flex: 0 40%;
+.item{
+  min-width: 250px;
   padding: 15px;
   border-radius: 10px;
   font-weight: 600;
@@ -75,19 +72,20 @@ a {
   -webkit-box-shadow: 7px 6px 12px -1px rgba(72, 72, 72, 0.77);
   -moz-box-shadow: 7px 6px 12px -1px rgba(72, 72, 72, 0.77);
 }
+.item_card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 40%;
+  
+}
+.stock{
+  display: flex;
+  margin: 10px;
+}
+
+
 
 .small-img {
   height: 90px;
 }
 
-.A-category {
-  background: rgb(100, 149, 237);
-}
-
-.B-category {
-  background: rgb(77, 180, 77);
-}
-
-.C-category {
-  background: rgb(226, 102, 64);
-}

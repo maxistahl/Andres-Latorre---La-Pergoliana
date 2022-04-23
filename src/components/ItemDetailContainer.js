@@ -10,8 +10,6 @@ const ItemDetailContainer = () => {
 
   const { itemId } = useParams();
 
-  console.log(itemId);
-
   useEffect(() => {
     setLoading(true);
     const getItems = new Promise((resolve) => {

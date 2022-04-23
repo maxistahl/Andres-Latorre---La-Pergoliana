@@ -1,4 +1,5 @@
 import React from 'react';
+import ItemCount from "./ItemCount"
 
 const ItemDetail = ({
   id,
@@ -16,6 +17,7 @@ const ItemDetail = ({
         <p>{description}</p>
         <h2>${price}</h2>
       </section>
+      <ItemCount/>
     </div>
   );
 };
