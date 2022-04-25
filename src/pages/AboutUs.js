@@ -1,9 +1,18 @@
 
+import { Link } from 'react-router-dom';
 import React from 'react';
 
 const AboutUs = () =>{
 
-  return <h1>acerca de nosotros</h1>
+  return (
+    <>
+  	  {/* 
+      */}
+
+      <Link to={`/`}>volver</Link>
+      <h1>Nosotras</h1>
+    </> 
+    );
 }
 
 

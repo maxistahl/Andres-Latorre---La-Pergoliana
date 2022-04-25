@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ItemList from './ItemList';
 import data from '../assets/data';
+import { Link, } from 'react-router-dom';
 
 /* import de useParams para traer el parametro de la URL */
 import { useParams } from 'react-router-dom';
@@ -40,7 +41,8 @@ const ItemListContainer = ({ greeting }) => {
     <h2>CARGANDO...</h2>
   ) : (
     <>
-      <h3 style={{ textAlign: 'center' }}>{greeting}</h3>
+      <Link to={`/`}>volver</Link>
+      <h3 style={{ textAlign: 'center' }}>{catId}</h3>
       <ItemList items={items} />
     </>
   );

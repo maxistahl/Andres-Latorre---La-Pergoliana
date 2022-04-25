@@ -9,10 +9,10 @@ import Logo from "../assets/logo.svg"
 
 const NavBar = () => {
   const categories = [
-    { id: '1000', address: '/', text: 'Productos' },
-    { id: '1001', address: '/category/kimono', text: 'kimono' },
-    { id: '1002', address: '/category/bata', text: 'bata' },
-    { id: '1003', address: '/category/panuelo', text: 'pañuelo' },
+    { id: '1000', address: '/products', text: 'Productos' },
+    { id: '1001', address: '/category/kimonos', text: 'kimonos' },
+    { id: '1002', address: '/category/batas', text: 'batas' },
+    { id: '1003', address: '/category/pañuelos', text: 'pañuelos' },
     { id: '1004', address: '/Size', text: 'Tabla de medidas' },
     { id: '1005', address: '/AboutUs', text: 'nosotras' },
     { id: '1006', address: '/Contact', text: 'contactanos' }

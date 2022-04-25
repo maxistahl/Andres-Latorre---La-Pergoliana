@@ -10,7 +10,7 @@ const data = [
       price:2500,
       stock:3,
       color:"turquesa",
-      category:"kimono",
+      category:"kimonos",
       description: "kimono de saten turquesa con flores amarillas y detalles en rojo de confeccion artesanal"
 
   },
@@ -21,7 +21,7 @@ const data = [
       price:2500,
       stock:5,
       color:"salmon",
-      category:"kimono",
+      category:"kimonos",
       description: "kimono de saten salmon y detalles en turquesa de confeccion artesanal"
 
   },
@@ -32,7 +32,7 @@ const data = [
       price:2500,
       stock:6,
       color:"rojo",
-      category:"kimono",
+      category:"kimonos",
       description: "kimono de saten rojo con flores rosas y detalles en turquesa de confeccion artesanal"
 
   },
@@ -43,7 +43,7 @@ const data = [
       price:2500,
       stock:2,
       color:"negro",
-      category:"bata",
+      category:"batas",
       description: "bata de saten negro con detalles blancos de confeccion artesanal"
 
   },
@@ -54,7 +54,7 @@ const data = [
       price:2500,
       stock:5,
       color:"blanco",
-      category:"bata",
+      category:"batas",
       description: "bata de saten blanco con detalles varios de confeccion artesanal"
 
   },
@@ -65,7 +65,7 @@ const data = [
       price:1500,
       stock:5,
       color:"verde",
-      category:"panuelo",
+      category:"pañuelos",
       description: "pañuelo de seda verde de confeccion artesanal"
   },
   {
@@ -75,7 +75,7 @@ const data = [
       price:1500,
       stock:5,
       color:"negro",
-      category:"panuelo",
+      category:"pañuelos",
       description: "pañuelo de seda negro con puntos blancos de confeccion artesanal"
   } 
 ];

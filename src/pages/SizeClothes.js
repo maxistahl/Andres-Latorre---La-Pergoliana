@@ -1,8 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SizeClothes = () =>{
 
-  return <h1>tabla de tallas</h1>
+  return (
+    <>
+  	  {/* 
+      */}
+
+      <Link to={`/`}>volver</Link>
+      <h1>TABLA DE TALLAS</h1>
+    </> 
+    );
 }
 
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './scss/styles/styles';
 
 /* IMPORTAMOS DE react-router-dom */
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
@@ -9,6 +9,7 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 import SizeClothes from './pages/SizeClothes';
 import Contact from './pages/Contact';
 import AboutUs from './pages/AboutUs';
+import Home from "./pages/Home"
 
 export default function App() {
   return (
@@ -20,11 +21,11 @@ export default function App() {
       {/* aca empiezan las rutas */}
       <Routes>
         {/* la HOME */}
-        <Route path="/" element={<ItemListContainer greeting={'HOME'} />} />
+        <Route path="/" element={<Home/>} />
         {/* filtramos por categoria */}
         <Route
           path="/category/:catId"
-          element={<ItemListContainer greeting={'FILTRADO'} />}
+          element={<ItemListContainer />}
         />
         {/* vista de detalle */}
         <Route path="/product/:itemId" element={<ItemDetailContainer />} />
@@ -36,6 +37,8 @@ export default function App() {
         <Route path="/Contact" element={<Contact />} />
         {/*Contacto */}
         <Route path="/AboutUs" element={<AboutUs />} />
+        {/*productos */}
+        <Route path="/products" element={<ItemListContainer />} />
       </Routes>
     </BrowserRouter>
   );
